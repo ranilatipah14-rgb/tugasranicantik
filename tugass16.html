@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rarani Ltfh - My Pink Social Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKx3G36n1p+S7TkwASwFh/B+5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        /* Variabel Warna Kustom */
+        :root {
+            --pink-muda: #FCEEF0; /* Warna dasar pink muda */
+            --cream-muda: #FFFDF8; /* Warna latar belakang cream muda */
+            --pink-aksen: #F0A0B0; /* Warna navigasi/tombol yang lebih menonjol */
+            --text-color: #333333;
+            --card-bg: #FFFFFF;
+        }
+
+        body {
+            background-color: var(--cream-muda);
+            color: var(--text-color);
+        }
+
+        /* Navigasi */
+        .navbar {
+            background-color: var(--pink-aksen) !important;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+
+        /* Kartu Konten */
+        .card {
+            border: 1px solid #FFE4E6; /* Border pink yang sangat muda */
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            background-color: var(--card-bg);
+        }
+
+        /* Animasi Lucu Berwarna Pink (Contoh: Bintang Berkedip) */
+        @keyframes twinkle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.1); }
+        }
+
+        .cute-animation {
+            color: var(--pink-aksen);
+            font-size: 1.2rem;
+            display: inline-block;
+            animation: twinkle 1.5s infinite ease-in-out;
+            margin-left: 5px;
+        }
+        
+        /* Gaya Profil */
+        .cover-photo {
+            height: 350px;
+            background: linear-gradient(to right bottom, var(--pink-aksen), var(--pink-muda));
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            position: relative;
+        }
+        
+        .profile-area {
+            position: relative;
+            margin-top: -100px; /* Tarik ke atas menutupi cover */
+            padding-left: 30px;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 6px solid var(--cream-muda);
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .post-button {
+            border-radius: 20px;
+            background-color: var(--pink-muda);
+            border: none;
+        }
+
+        /* Tombol Aksi Postingan */
+        .post-action-btn {
+            color: #606770;
+        }
+        .post-action-btn:hover {
+            background-color: var(--pink-muda);
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">RaraniBook <span class="cute-animation">⭐</span></a>
+            
+            <form class="d-flex mx-auto" role="search">
+                <input class="form-control me-2 rounded-pill" type="search" placeholder="Cari Teman..." aria-label="Search" style="width: 300px;">
+                <button class="btn btn-light rounded-circle" type="submit"><i class="fas fa-search" style="color: var(--pink-aksen);"></i></button>
+            </form>
+            
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+
+        <div class="card p-0 mb-4">
+            <div class="cover-photo d-flex justify-content-end align-items-end p-3">
+                <button class="btn btn-light"><i class="fas fa-camera me-2"></i> Edit Foto Sampul</button>
+            </div>
+            
+            <div class="profile-area d-flex align-items-end flex-wrap pb-3">
+                <img src="cantik.jpg" class="profile-img me-4" alt="Foto Profil Rarani">
+                
+                <div class="flex-grow-1">
+                    <h1 class="fw-bold mb-0">Rarani Ltfh <span class="cute-animation">🎀</span></h1>
+                    <p class="text-muted">1.000k Teman • 200 Postingan</p>
+                    <p class="text-muted"> Motto: "Di setiap Kesulitan pasti ada kemudahan_"</p>
+                </div>
+                
+                <div class="d-flex gap-2 p-2">
+                    <button class="btn" style="background-color: var(--pink-aksen); color: white;"><i class="fas fa-plus-circle me-2"></i> Tambah ke Cerita</button>
+                    <button class="btn btn-secondary"><i class="fas fa-pen me-2"></i> Edit Profil</button>
+                </div>
+            </div>
+
+            <div class="card-footer bg-white pt-0">
+                <ul class="nav nav-underline">
+                    <li class="nav-item"><a class="nav-link active" href="#">Postingan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#friends">Teman</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#photos">Foto</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row">
+            
+            <div class="col-lg-4">
+                
+                <div class="card p-4 mb-4" id="about">
+                    <h5 class="fw-bold mb-3"><i class="fas fa-address-card me-2"></i> Tentang</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-briefcase me-2" style="color: var(--pink-aksen);"></i>Nama: Rani Latipah</li>
+                        <li><i class="fas fa-graduation-cap me-2" style="color: var(--pink-aksen);"></i> Tempat Tanggal Lahir: Garut 02 - Juni - 2008</li>
+                        <li><i class="fas fa-home me-2" style="color: var(--pink-aksen);"></i> Hobbi: Berolahraga</li>
+                        <li><i class="fas fa-heart me-2" style="color: var(--pink-aksen);"></i> Status:Berhubungan</li>
+                        <li><i class="fas fa-clock me-2" style="color: var(--pink-aksen);"></i> Bergabung sejak: Februari 2020</li>
+                    </ul>
+                </div>
+
+                <div class="card p-4 mb-4" id="friends">
+                    <h5 class="fw-bold mb-3"><i class="fas fa-user-friends me-2"></i> Teman (6)</h5>
+                    <div class="row g-2">
+                        <div class="col-4 text-center">
+                            <img src="sangmin.webp" class="img-fluid rounded-3" alt="Teman Lisa">
+                            <small class="d-block mt-1">Sang Min</small>
+                        </div>
+                        <div class="col-4 text-center">
+                            <img src="seong a.jpg" class="img-fluid rounded-3" alt="Teman Budi">
+                            <small class="d-block mt-1">Park Seong A</small>
+                        </div>
+                        <div class="col-4 text-center">
+                            <img src="sipa.jpg" class="img-fluid rounded-3" alt="Teman Fira">
+                            <small class="d-block mt-1">Syiva</small>
+                        </div>
+                        <div class="col-4 text-center">
+                            <img src="amanda.webp" class="img-fluid rounded-3" alt="Teman Risa">
+                            <small class="d-block mt-1">Amanda</small>
+                        </div>
+                         <div class="col-4 text-center">
+                            <img src="jeni.jpg" class="img-fluid rounded-3" alt="Teman Dani">
+                            <small class="d-block mt-1">Jennie</small>
+                        </div>
+                         <div class="col-4 text-center">
+                            <img src="gyeon u.jpg" class="img-fluid rounded-3" alt="Teman Siti">
+                            <small class="d-block mt-1">Gyeon U</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-4 mb-4" id="photos">
+                    <h5 class="fw-bold mb-3"><i class="fas fa-images me-2"></i> Foto</h5>
+                    <div class="row g-2">
+                        <div class="col-6"><img src="kucing oren.jpg" class="img-fluid rounded-3" alt="Foto Travel"></div>
+                        <div class="col-6"><img src="bidadari.jpg" class="img-fluid rounded-3" alt="Foto Selfie"></div>
+                        <div class="col-6"><img src="sayang.jpg" class="img-fluid rounded-3" alt="Foto Makanan"></div>
+                        <div class="col-6"><img src="zaitun.jpg" class="img-fluid rounded-3" alt="Foto Hewan"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-8">
+                
+                <div class="card p-3 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="cantik.jpg" class="rounded-circle me-3" alt="Foto Profil" width="50" height="50">
+                        <input type="text" class="form-control post-button" placeholder="Apa yang kamu pikirkan, Rarani?" disabled>
+                    </div>
+                    <hr class="my-2">
+                    <div class="d-flex justify-content-around">
+                        <button class="btn btn-sm text-primary post-action-btn w-100"><i class="fas fa-video me-1"></i> Video Live</button>
+                        <button class="btn btn-sm text-success post-action-btn w-100"><i class="fas fa-image me-1"></i> Foto/Video</button>
+                        <button class="btn btn-sm text-warning post-action-btn w-100"><i class="fas fa-smile me-1"></i> Perasaan</button>
+                    </div>
+                </div>
+
+                <div class="card p-3 mb-4">
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="cantik.jpg" class="rounded-circle me-3" alt="Foto Profil" width="50" height="50">
+                        <div>
+                            <h6 class="mb-0 fw-bold">Rarani Ltfh <span class="cute-animation">💖</span></h6>
+                            <small class="text-muted">2 jam yang lalu <i class="fas fa-globe-americas"></i></small>
+                        </div>
+                    </div>
+                    <p>Tebak hari ini aku mau kemanaa? <span class="cute-animation">✨</span></p>
+                    
+                    <img src="me.jpg" class="img-fluid rounded-3 mb-3" alt="Foto Postingan">
+                    
+                    <div class="d-flex justify-content-between text-muted small px-2">
+                        <span><i class="fas fa-thumbs-up text-primary me-1"></i><i class="fas fa-heart text-danger me-1"></i> 321 Suka, 55 Komentar</span>
+                        <span>5 Bagikan</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-around">
+                        <button class="btn btn-sm post-action-btn w-100"><i class="fas fa-thumbs-up me-1"></i> Suka</button>
+                        <button class="btn btn-sm post-action-btn w-100"><i class="fas fa-comment me-1"></i> Komentar</button>
+                        <button class="btn btn-sm post-action-btn w-100"><i class="fas fa-share me-1"></i> Bagikan</button>
+                    </div>
+                </div>
+
+                <div class="card p-3 mb-4">
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="sipa.jpg" class="rounded-circle me-3" alt="Foto Profil Teman" width="50" height="50">
+                        <div>
+                            <h6 class="mb-0 fw-bold">syiva</h6>
+                            <small class="text-muted">1 hari yang lalu <i class="fas fa-user-friends"></i></small>
+                        </div>
+                    </div>
+                    <p>Cuaca mendung gini enaknya ditemani semangkuk ramen hangat. Coba tebak ini ramen di mana? Tag Rarani, kita harus coba ini lagi! <span class="cute-animation">🍜</span></p>
+                    <div class="d-flex justify-content-between text-muted small px-2">
+                        <span><i class="fas fa-thumbs-up text-primary me-1"></i> 89 Suka, 12 Komentar</span>
+                        <span>0 Bagikan</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-around">
+                        <button class="btn btn-sm post-action-btn w-100"><i class="fas fa-thumbs-up me-1"></i> Suka</button>
+                        <button class="btn btn-sm post-action-btn w-100"><i class="fas fa-comment me-1"></i> Komentar</button>
+                        <button class="btn btn-sm post-action-btn w-100"><i class="fas fa-share me-1"></i> Bagikan</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
